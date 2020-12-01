@@ -1,4 +1,8 @@
 package main;
 
-public class EnterPinMsg2 {
+public class EnterPinMsg2 extends EnterPinMsg{
+    @Override
+    public void EnterPinMsg() {
+
+    }
 }

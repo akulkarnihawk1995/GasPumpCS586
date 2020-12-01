@@ -1,4 +1,8 @@
 package main;
 
-public class PumpGasUnit1 {
+public class PumpGasUnit1 extends PumpGasUnit{
+    @Override
+    public void PumpGasUnit(DataStore ds) {
+        
+    }
 }

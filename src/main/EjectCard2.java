@@ -1,4 +1,4 @@
 package main;
 
-public class EjectCard2 {
+public class EjectCard2 extends EjectCard{
 }
