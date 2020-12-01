@@ -5,9 +5,9 @@ public class Driver {
     public static void main(String[] args)
     { // partial driver
         GP1 gp1 = new GP1();
-        System.out.print("                          GasPump-1");
+        System.out.print("GasPump-1");
         System.out.print("\n");
-        System.out.print("                  MENU of Operations");
+        System.out.print("MENU of Operations");
         System.out.print("\n");
         System.out.print("          0. Activate(int)");
         System.out.print("\n");
