@@ -8,10 +8,10 @@ public abstract class AbstractFactory {
     public abstract DisplayMenu Create_DisplayMenu();
     public abstract RejectMsg Create_RejectMsg();
     public abstract SetPrice Create_SetPrice();
-    public abstract ReadyMsg Create_ReadyMsg();
     public abstract SetInitialValues Create_SetInitialValues();
     public abstract PumpGasUnit Create_PumpGasUnit();
     public abstract GasPumpedMsg Create_GasPumpedMsg();
+    public abstract PrintReceipt Create_PrintReceipt();
     public abstract CancelMsg Create_CancelMsg();
     public abstract ReturnCash Create_ReturnCash();
     public abstract WrongPinMsg Create_WrongPinMsg();
@@ -19,5 +19,6 @@ public abstract class AbstractFactory {
     public abstract EnterPinMsg Create_EnterPinMsg();
     public abstract SetW Create_SetW();
     public abstract EjectCard Create_EjectCard();
+    public abstract InitializeData Create_InitializeDate();
     public abstract DataStore get_DataStore();
 }

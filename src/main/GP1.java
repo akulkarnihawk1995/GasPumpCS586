@@ -3,6 +3,7 @@ package main;
 public class GP1 {
     private DataStore d;
     private MDAEFSM m;
+
     public void Activate(int a) {
     }
 
@@ -31,5 +32,11 @@ public class GP1 {
     }
 
     public void StopPump() {
+
+    }
+    public void Initialize(AbstractFactory af){
+        d = af.get_DataStore();
+        m = new MDAEFSM();
+        m.Initialize(af);
     }
 }

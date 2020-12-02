@@ -4,87 +4,92 @@ public class ConcreteFactory2 extends AbstractFactory{
 
     @Override
     public StorePrices Create_StorePrices() {
-        return null;
+        return new StorePrices2();
     }
 
     @Override
     public PayMsg Create_PayMsg() {
-        return null;
+        return new PayMsg2();
     }
 
     @Override
     public StoreCash Create_StoreCash() {
-        return null;
+        return new StoreCash2();
     }
 
     @Override
     public DisplayMenu Create_DisplayMenu() {
-        return null;
+        return new DisplayMenu2();
     }
 
     @Override
     public RejectMsg Create_RejectMsg() {
-        return null;
+        return new RejectMsg2();
     }
 
     @Override
     public SetPrice Create_SetPrice() {
-        return null;
-    }
-
-    @Override
-    public ReadyMsg Create_ReadyMsg() {
-        return null;
+        return new SetPrice2();
     }
 
     @Override
     public SetInitialValues Create_SetInitialValues() {
-        return null;
+        return new SetInitialValues2();
     }
 
     @Override
     public PumpGasUnit Create_PumpGasUnit() {
-        return null;
+        return new PumpGasUnit2();
     }
 
     @Override
     public GasPumpedMsg Create_GasPumpedMsg() {
-        return null;
+        return new GasPumpedMsg2();
+    }
+
+    @Override
+    public PrintReceipt Create_PrintReceipt() {
+        return new PrintReceipt2();
     }
 
     @Override
     public CancelMsg Create_CancelMsg() {
-        return null;
+        return new CancelMsg2();
     }
 
     @Override
     public ReturnCash Create_ReturnCash() {
-        return null;
+        return new ReturnCash2();
     }
 
     @Override
     public WrongPinMsg Create_WrongPinMsg() {
-        return null;
+        return new WrongPinMsg2();
     }
 
     @Override
     public StorePin Create_StorePin() {
-        return null;
+        return new StorePin2();
     }
 
     @Override
     public EnterPinMsg Create_EnterPinMsg() {
-        return null;
+        return new EnterPinMsg2();
     }
 
     @Override
     public SetW Create_SetW() {
-        return null;
+        return new SetW2();
     }
 
     @Override
     public EjectCard Create_EjectCard() {
-        return null;
+        return new EjectCard2();
+    }
+
+    @Override
+    public InitializeData Create_InitializeDate() {
+        return new InitializeData2();
     }
 
     @Override
