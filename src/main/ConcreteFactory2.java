@@ -94,6 +94,6 @@ public class ConcreteFactory2 extends AbstractFactory{
 
     @Override
     public DataStore get_DataStore() {
-        return null;
+        return new DataStore2();
     }
 }
