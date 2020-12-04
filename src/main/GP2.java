@@ -28,12 +28,18 @@ public class GP2 {
         printDataStore();
     }
     public void Pin(String x){
-        if(dataStore.getPin().equals(x)){
-            mdaefsm.CorrectPin();
+        if(dataStore.getPin()!=null){
+            if(dataStore.getPin().equals(x)){
+                mdaefsm.CorrectPin();
+            }
+            else{
+                mdaefsm.IncorrectPin(1);
+            }
         }
         else{
-            mdaefsm.IncorrectPin(1);
+            System.out.println("Please Call PayDebit First");
         }
+
     }
     public void Cancel(){
         mdaefsm.Cancel();
