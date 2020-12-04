@@ -51,6 +51,7 @@ public class GP1 {
         if(c>0){
             d.setTemp_c(c);
             m.PayCash();
+            printDataStore();
         }
     }
 

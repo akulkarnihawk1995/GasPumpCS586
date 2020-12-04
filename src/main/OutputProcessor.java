@@ -90,8 +90,8 @@ public class OutputProcessor {
         public void InitializeData(){
                 initializeData.InitializeDate(ds);
         }
-        public void SetW() {
-                setW.SetW(ds);
+        public void SetW(int w) {
+                setW.SetW(ds,w);
         }
         public void EjectCard(){
                 ejectCard.EjectCard(ds);
