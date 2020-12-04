@@ -10,7 +10,7 @@ public class GP2 {
             dataStore.setTemp_b(b);
             dataStore.setTemp_c(c);
             mdaefsm.Activate();
-            printDataStore();
+            //printDataStore();
         }
     }
     public void Start(){
@@ -25,7 +25,7 @@ public class GP2 {
     public void PayDebit(String p){
         dataStore.setTemp_p(p);
         mdaefsm.PayDebit();
-        printDataStore();
+        //printDataStore();
     }
     public void Pin(String x){
         if(dataStore.getPin()!=null){
@@ -49,20 +49,20 @@ public class GP2 {
     }
     public void Diesel(){
         mdaefsm.SelectGas(3);
-        printDataStore();
+        //printDataStore();
     }
     public void Regular(){
         mdaefsm.SelectGas(1);
-        printDataStore();
+        //printDataStore();
     }
     public void Super(){
         mdaefsm.SelectGas(2);
-        printDataStore();
+        //printDataStore();
     }
     public void StartPump(){
         if(dataStore.getFloatPrice()>0){
             mdaefsm.StartPump();
-            printDataStore();
+            //printDataStore();
         }
     }
     public void PumpGallon(){

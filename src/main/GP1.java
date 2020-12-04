@@ -19,11 +19,11 @@ public class GP1 {
     public void Activate(int a) {
         if(a>0){
             d.setTemp_a(a);
-            System.out.println("Before");
-            printDataStore();
+           // System.out.println("Before");
+            //printDataStore();
             m.Activate();
             System.out.println("After");
-            printDataStore();
+            //printDataStore();
         }
     }
 
@@ -51,7 +51,7 @@ public class GP1 {
         if(c>0){
             d.setTemp_c(c);
             m.PayCash();
-            printDataStore();
+            //printDataStore();
         }
     }
 
@@ -59,15 +59,19 @@ public class GP1 {
         m.StartPump();
     }
 
-    public void PumpLiter() {
-        if(d.getW()==1){
+    public void PumpLiter()
+    {
+        if ( d.getW() == 1)
+        {
             m.Pump();
         }
-        else if((d.getCash()>0) && (d.getCash()<d.getIntPrice()*(d.getL()+1))){
+        else if (d.getCash() > 0 && (d.getCash() < d.getIntPrice() * (d.getL() + 1)))
+        {
             m.StopPump();
         }
-        else {
-            m.StopPump();
+        else
+        {
+            m.Pump();
         }
     }
 
