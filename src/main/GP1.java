@@ -1,5 +1,7 @@
 package main;
-
+// This class has a Model for GP1 or GasPump-1.
+// In the Initialize method of this class it'll get the DataStore and also initializes MDA_EFMS OutputProcessor OP and DataStore.
+//This class has methods that'll be called by Driver program
 public class GP1 {
     private DataStore d;
     private MDAEFSM m;

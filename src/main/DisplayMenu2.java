@@ -1,5 +1,7 @@
 package main;
-
+//Strategy Pattern
+//This Strategy class contains the concrete implementation that will be used by GP2's DisplayMenu
+//This is also a Component In Abstract Factory Pattern.
 public class DisplayMenu2 extends DisplayMenu{
     @Override
     public void DisplayMenu() {

@@ -1,5 +1,7 @@
 package main;
-
+//Strategy Pattern
+//This Strategy class contains the concrete implementation that will be used by GP2's PayMsg
+//This is also a Component In Abstract Factory Pattern.
 public class PayMsg2 extends PayMsg{
     @Override
     public void PayMsg() {

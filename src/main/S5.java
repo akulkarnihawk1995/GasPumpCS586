@@ -1,5 +1,6 @@
 package main;
-
+// State Pattern
+// Concrete State S5 for the MDA-EFSM's State Machine
 public class S5 extends State{
 
 

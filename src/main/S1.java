@@ -1,5 +1,6 @@
 package main;
-
+// State Pattern
+// Concrete State S1 for the MDA-EFSM's State Machine
 public class S1 extends State{
     @Override
     public void Activate() {

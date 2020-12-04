@@ -1,6 +1,11 @@
 package main;
 
 import main.DataStore;
+//Strategy Pattern
+//This class is the OutputProcessor of the MDA architecture.
+//Contains the strategies that are different for different GasPump. Therefore this is a Strategy Pattern
+//Class is initialized by Abstract Factory Pattern.
+//Different States will be responsible for calling the OutputProcessors methods.
 
 public class OutputProcessor {
         private DataStore ds;

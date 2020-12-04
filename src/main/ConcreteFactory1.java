@@ -1,5 +1,8 @@
 package main;
-
+// AbstractFactory Pattern
+//This class contains ConcreteFactory1 which will be a ConcreteFactory for our GasPump1(GP1).
+//This will return the actions that are GasPump1's
+//This also create DataStore1
 public class ConcreteFactory1 extends AbstractFactory{
     @Override
     public StorePrices Create_StorePrices() {

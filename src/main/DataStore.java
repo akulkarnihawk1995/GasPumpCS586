@@ -1,4 +1,7 @@
 package main;
+//Abstract Factory Pattern
+//This class is parent class for DataStores
+//AbstractFactory pattern will create the needed DataStores for the respective GasPump1 or GasPump2 Systems.
 public abstract class DataStore {
     public abstract int getIntTemp_c();
 

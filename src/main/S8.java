@@ -1,5 +1,6 @@
 package main;
-
+// State Pattern
+// Concrete State S8 for the MDA-EFSM's State Machine
 public class S8 extends State{
 
     @Override

@@ -1,3 +1,8 @@
+//Abstract Factory pattern.
+/*abstract part of Abstract Factory This class is the abstract class.
+* This is the abstract part of Abstract Factory pattern.
+*Abstract Factory is passed around irrespective of underlying Concrete Factory.
+* It's products are created like when GP2 calls  Create_DisplayMenu it should return DisplayMenu2 because it's a ConcreteFactory2*/
 package main;
 
 public abstract class AbstractFactory {

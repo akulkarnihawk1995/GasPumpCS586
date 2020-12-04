@@ -1,5 +1,7 @@
 package main;
-
+//Abstract Factory Pattern
+//This class contains methods (defined) and variables that will be used by GasPump2 or GP2
+//This class mostly contains getters and setters that'll be used by GP2
 public class DataStore2 extends DataStore {
     float temp_a;
     float temp_b;

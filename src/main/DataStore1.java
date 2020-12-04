@@ -1,5 +1,7 @@
 package main;
-
+//Abstract Factory Pattern
+//This class contains methods (defined) and variables that will be used by GasPump1 or GP1
+//This class mostly contains getters and setters
 public class DataStore1 extends DataStore {
     int temp_c;
     int cash;

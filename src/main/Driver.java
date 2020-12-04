@@ -1,6 +1,8 @@
 package main;
-
 import java.util.Scanner;
+
+//Responsible Display Menu (UI)
+//This class let's user input choices and takes parameters.
 public class Driver {
     public static void main(String[] args)
     { // partial driver
