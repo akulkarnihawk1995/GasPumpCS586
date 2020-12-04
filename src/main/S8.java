@@ -68,7 +68,14 @@ public class S8 extends State{
     }
 
     @Override
-    public void InCorrectPin(int k) {
-
+    public void InCorrectPin(int max) {
+        if(mdaefsm.k<=max){
+            outPutProcessor.WrongPinMsg();
+            mdaefsm.k=mdaefsm.k+1;
+        }
+        else if(mdaefsm.k>max){
+            outPutProcessor.WrongPinMsg();
+            outPutProcessor.EjectCard();
+        }
     }
 }
