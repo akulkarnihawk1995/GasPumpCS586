@@ -42,12 +42,15 @@ public class GP2 {
     }
     public void Diesel(){
         mdaefsm.SelectGas(3);
+        printDataStore();
     }
     public void Regular(){
         mdaefsm.SelectGas(1);
+        printDataStore();
     }
     public void Super(){
         mdaefsm.SelectGas(2);
+        printDataStore();
     }
     public void StartPump(){
         if(dataStore.getFloatPrice()>0){
@@ -82,6 +85,7 @@ public class GP2 {
         System.out.println("Super = " + dataStore.getSprice());
         System.out.println("p= = " + dataStore.getTemp_p());
         System.out.println("pin = " + dataStore.getPin());
+        System.out.println("price = " + dataStore.getFloatPrice());
         System.out.println("----------------------------");
     }
 }

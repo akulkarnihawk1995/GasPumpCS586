@@ -57,8 +57,8 @@ public class OutputProcessor {
         public void RejectMsg(){
                 rejectMsg.RejectMsg();
         }
-        public void SetPrice(int g){
-               setPrice.SetPrice(ds,g);
+        public void SetPrice(int price){
+               setPrice.SetPrice(ds,price);
         }
         public void SetInitialValues(){
                 setInitialValues.SetIntialValues(ds);
