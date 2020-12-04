@@ -3,11 +3,6 @@ package main;
 public class S8 extends State{
 
     @Override
-    public void Create() {
-
-    }
-
-    @Override
     public void Activate() {
 
     }

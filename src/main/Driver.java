@@ -10,10 +10,8 @@ public class Driver {
         Scanner in = new Scanner(System.in);
         char option = in.next().charAt(0);
         if(option=='1'){
-
-
-            AbstractFactory abstractFactory1 = new ConcreteFactory1();
             GP1 gp1 = new GP1();
+            AbstractFactory abstractFactory1 = new ConcreteFactory1();
             gp1.Initialize(abstractFactory1);
 
             System.out.print("GasPump-1");
@@ -60,11 +58,12 @@ public class Driver {
                 {
                     case '0':
                     { //Activate()
+                        int a;
                         System.out.print("  Operation:  Activate(int a)");
                         System.out.print("\n");
                         System.out.print("  Enter value of the parameter a:");
                         System.out.print("\n");
-                        int a = sc.nextInt();
+                        a = sc.nextInt();
                         gp1.Activate(a);
                         break;
                     }

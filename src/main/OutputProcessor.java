@@ -22,8 +22,8 @@ public class OutputProcessor {
         private InitializeData initializeData;
         private SetW setW;
         private EjectCard ejectCard;
-        public void Initialize(AbstractFactory af){
-                ds = af.get_DataStore();
+        public void Initialize(AbstractFactory af,DataStore dataStore){
+                ds = dataStore;
                 storePrices = af.Create_StorePrices();
                 payMsg = af.Create_PayMsg();
                 storeCash = af.Create_StoreCash();
@@ -39,62 +39,61 @@ public class OutputProcessor {
                 wrongPinMsg = af.Create_WrongPinMsg();
                 storePin = af.Create_StorePin();
                 enterPinMsg = af.Create_EnterPinMsg();
-                initializeData = af.Create_InitializeDate();
+                initializeData = af.Create_InitializeData();
                 setW = af.Create_SetW();
                 ejectCard=af.Create_EjectCard();
         }
-        public void setStorePrices(){
-                storePrices.StorePrices(ds);
-        }
-        public void setPayMsg(){
+
+        public void StorePrices(){storePrices.StorePrices(ds);}
+        public void PayMsg(){
                 payMsg.PayMsg();
         }
-        public void setStoreCash(){
+        public void StoreCash(){
                 storeCash.StoreCash(ds);
         }
-        public void setDisplayMenu(){
+        public void DisplayMenu(){
                 displayMenu.DisplayMenu();
         }
-        public void setRejectMsg(){
+        public void RejectMsg(){
                 rejectMsg.RejectMsg();
         }
-        public void setSetPrice(int g){
+        public void SetPrice(int g){
                setPrice.SetPrice(ds,g);
         }
-        public void setSetInitialValues(){
+        public void SetInitialValues(){
                 setInitialValues.SetIntialValues(ds);
         }
-        public void setPumpGasUnit(){
+        public void PumpGasUnit(){
                 pumpGasUnit.PumpGasUnit(ds);
         }
-        public void setGasPumpedMsg(){
+        public void GasPumpedMsg(){
                 gasPumpedMsg.GasPumpedMsg(ds);
         }
-        public void setPrintReceipt(){
+        public void PrintReceipt(){
                 printReceipt.PrintReceipt(ds);
         }
-        public void setCancelMsg(){
+        public void CancelMsg(){
                 cancelMsg.CancelMsg();
         }
-        public void setReturnCash(){
+        public void ReturnCash(){
                 returnCash.ReturnCash(ds);
         }
-        public void setWrongPinMsg(){
+        public void WrongPinMsg(){
                 wrongPinMsg.WrongPinMsg();
         }
-        public void setStorePin(){
+        public void StorePin(){
                 storePin.StorePin(ds);
         }
-        public void setEnterPinMsg(){
+        public void EnterPinMsg(){
                 enterPinMsg.EnterPinMsg();
         }
-        public void setInitializeData(){
+        public void InitializeData(){
                 initializeData.InitializeDate(ds);
         }
-        public void setSetW() {
+        public void SetW() {
                 setW.SetW(ds);
         }
-        public void setEjectCard(){
+        public void EjectCard(){
                 ejectCard.EjectCard(ds);
         }
 }

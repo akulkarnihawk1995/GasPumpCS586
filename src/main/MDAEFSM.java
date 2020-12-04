@@ -4,12 +4,14 @@ import main.AbstractFactory;
 
 public class MDAEFSM {
 
-    State[] states;
-    State state;
-    int k;
-    public void Initialize(AbstractFactory af){
-        OutputProcessor op = new OutputProcessor();
-        op.Initialize(af);
+    private State[] states;
+    private State state;
+    private int k;
+    OutputProcessor op;
+
+    public void Initialize(AbstractFactory af, DataStore d) {
+        op = new OutputProcessor();
+        op.Initialize(af, d);
         states = new State[7];
         states[0] = new S0();
         states[1] = new S1();
@@ -22,59 +24,99 @@ public class MDAEFSM {
 
         //THIS NEEDS TO CHANGE
         state = states[6];
+
         //CHANGE END
 
-        for(State s:states){
+        for (State s : states) {
             s.setMdaefsm(this);
             s.setOutPutProcessor(op);
         }
     }
 
-    public void setStates(int state_number){
+    public void setStates(int state_number) {
         state = states[state_number];
+        String state = detectState(state_number);
+        System.out.println("Current State is"+state);
     }
-    public void Activate(){
+
+    public void Activate() {
         state.Activate();
     }
-    public void Start(){
+
+    public void Start() {
         state.Start();
     }
-    public void Reject(){
+
+    public void Reject() {
         state.Reject();
     }
-    public void Cancel(){
+
+    public void Cancel() {
         state.Cancel();
     }
-    public void Approved(){
+
+    public void Approved() {
         state.Approved();
     }
-    public void StartPump(){
+
+    public void StartPump() {
         state.StartPump();
     }
-    public void Pump(){
+
+    public void Pump() {
         state.Pump();
     }
-    public void StopPump(){
+
+    public void StopPump() {
         state.StopPump();
     }
-    public void SelectGas(int g){
+
+    public void SelectGas(int g) {
         state.SelectGas(g);
     }
-    public void CorrectPin(){
+
+    public void CorrectPin() {
         state.CorrectPin();
     }
-    public void IncorrectPin(int k){
+
+    public void IncorrectPin(int k) {
         state.InCorrectPin(k);
     }
-    public void PayCash(){
+
+    public void PayCash() {
         state.PayCash();
     }
-    public void PayCredit(){
+
+    public void PayCredit() {
         state.PayCredit();
     }
-    public void PayDebit(){
+
+    public void PayDebit() {
         state.PayDebit();
     }
 
+    //Testing Purpose : Show Current State
+    String detectState (int a)
+    {
+        switch (a)
+        {
+            case 0:
+                return "S0";
+            case 1:
+                return "S1";
+            case 2:
+                return "S2";
+            case 3:
+                return "S3";
+            case 4:
+                return "S5";
+            case 5:
+                return "S8";
+            case 6:
+                return "Activate";
+            default:
+                return "Invalid";
+        }
+    }
 }
 

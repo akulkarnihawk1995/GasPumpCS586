@@ -1,7 +1,7 @@
 package main;
 
 public abstract class AbstractFactory {
-    DataStore ds;
+    DataStore dataStore;
     public abstract StorePrices Create_StorePrices();
     public abstract PayMsg Create_PayMsg();
     public abstract StoreCash Create_StoreCash();
@@ -19,6 +19,6 @@ public abstract class AbstractFactory {
     public abstract EnterPinMsg Create_EnterPinMsg();
     public abstract SetW Create_SetW();
     public abstract EjectCard Create_EjectCard();
-    public abstract InitializeData Create_InitializeDate();
+    public abstract InitializeData Create_InitializeData();
     public abstract DataStore get_DataStore();
 }

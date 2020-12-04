@@ -1,16 +1,15 @@
 package main;
 
 public abstract class State {
-    OutputProcessor outputProcessor;
+    OutputProcessor outPutProcessor;
     MDAEFSM mdaefsm;
 
     public void setOutPutProcessor(OutputProcessor outPutProcessor) {
-        this.outputProcessor = outPutProcessor;
+        this.outPutProcessor = outPutProcessor;
     }
     public void setMdaefsm(MDAEFSM mdaefsm){
         this.mdaefsm = mdaefsm;
     }
-    public abstract void Create();
     public abstract void Activate();
     public abstract void Start();
     public abstract void PayDebit();

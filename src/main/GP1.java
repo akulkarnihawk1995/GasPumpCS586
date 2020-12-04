@@ -1,13 +1,29 @@
 package main;
 
 public class GP1 {
-    private DataStore dataStore;
+    private DataStore d;
     private MDAEFSM m;
+
+    public void printDataStore() {
+        System.out.println("-----------datastore--------------");
+        System.out.println("temp_c = " + d.getIntTemp_c());
+        System.out.println("cash = " + d.getCash());
+        System.out.println("total = " + d.getIntTotal());
+        System.out.println("L = " + d.getL());
+        System.out.println("price = " + d.getIntPrice());
+        System.out.println("temp_a = " + d.getIntTemp_a());
+        System.out.println("w = " + d.getW());
+        System.out.println("----------------------------");
+    }
 
     public void Activate(int a) {
         if(a>0){
-            dataStore.setTemp_a(a);
+            d.setTemp_a(a);
+            System.out.println("Before");
+            printDataStore();
             m.Activate();
+            System.out.println("After");
+            printDataStore();
         }
     }
 
@@ -33,7 +49,7 @@ public class GP1 {
 
     public void PayCash(int c) {
         if(c>0){
-            dataStore.setTemp_c(c);
+            d.setTemp_c(c);
             m.PayCash();
         }
     }
@@ -43,10 +59,10 @@ public class GP1 {
     }
 
     public void PumpLiter() {
-        if(dataStore.getW()==1){
+        if(d.getW()==1){
             m.Pump();
         }
-        else if((dataStore.getCash()>0) && (dataStore.getCash()<dataStore.getIntPrice()*(dataStore.getL()+1))){
+        else if((d.getCash()>0) && (d.getCash()<d.getIntPrice()*(d.getL()+1))){
             m.StopPump();
         }
         else {
@@ -58,8 +74,8 @@ public class GP1 {
         m.StopPump();
     }
     public void Initialize(AbstractFactory af){
-        dataStore = af.get_DataStore();
+        d = new DataStore1();
         m = new MDAEFSM();
-        m.Initialize(af);
+        m.Initialize(af,d);
     }
 }

@@ -88,7 +88,7 @@ public class ConcreteFactory2 extends AbstractFactory{
     }
 
     @Override
-    public InitializeData Create_InitializeDate() {
+    public InitializeData Create_InitializeData() {
         return new InitializeData2();
     }
 

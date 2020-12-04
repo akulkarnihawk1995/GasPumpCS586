@@ -2,10 +2,7 @@ package main;
 
 public class S3 extends State{
 
-    @Override
-    public void Create() {
 
-    }
 
     @Override
     public void Activate() {

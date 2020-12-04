@@ -2,10 +2,6 @@ package main;
 
 public class S5 extends State{
 
-    @Override
-    public void Create() {
-
-    }
 
     @Override
     public void Activate() {

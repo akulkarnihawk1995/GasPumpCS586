@@ -1,20 +1,16 @@
 package main;
 
 public class S0 extends State{
-
-    @Override
-    public void Create() {
-
-    }
-
     @Override
     public void Activate() {
-
+        System.out.println("Invalid State. Currently on State S0");
     }
 
     @Override
     public void Start() {
-
+        System.out.println("Started Start State");
+        outPutProcessor.PayMsg();
+        mdaefsm.setStates(1);
     }
 
     @Override

@@ -10,6 +10,7 @@ public class GP2 {
             dataStore.setTemp_b(b);
             dataStore.setTemp_c(c);
             mdaefsm.Activate();
+            printDataStore();
         }
     }
     public void Start(){
@@ -64,8 +65,23 @@ public class GP2 {
     }
 
     public void Initialize(AbstractFactory af){
-        dataStore = af.get_DataStore();
+        dataStore = new DataStore2();
         mdaefsm = new MDAEFSM();
-        mdaefsm.Initialize(af);
+        mdaefsm.Initialize(af,dataStore);
+    }
+
+    public void printDataStore() {
+        System.out.println("-----------datastore--------------");
+        System.out.println("temp_a = " + dataStore.getFloatTemp_a());
+        System.out.println("temp_b = " + dataStore.getTemp_b());
+        System.out.println("temp_c = " + dataStore.getFloatTemp_c());
+        System.out.println("G = " + dataStore.getG());
+        System.out.println("total = " + dataStore.getFloatTotal());
+        System.out.println("Rprice = " + dataStore.getRprice());
+        System.out.println("DPrice = " + dataStore.getDprice());
+        System.out.println("Super = " + dataStore.getSprice());
+        System.out.println("p= = " + dataStore.getTemp_p());
+        System.out.println("pin = " + dataStore.getPin());
+        System.out.println("----------------------------");
     }
 }
