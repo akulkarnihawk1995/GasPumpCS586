@@ -1,5 +1,8 @@
 package main;
-
+//State Pattern
+//This is an abstract base class or parent class for states s0,s1..s8
+//Contains a reference to MDAEFMS to change the states
+//Also, this class Contains reference to OutputProcessor to perform numerous actions.
 public abstract class State {
     OutputProcessor outPutProcessor;
     MDAEFSM mdaefsm;
