@@ -14,7 +14,10 @@ public class S1 extends State{
 
     @Override
     public void PayDebit() {
-        System.out.println("Invalid State. Currently on State S1. Select 2.PayCredit or 6.PayCash");
+        outPutProcessor.EnterPinMsg();
+        outPutProcessor.StorePin();
+        mdaefsm.k = 0;
+        mdaefsm.setStates(5);
     }
 
     @Override

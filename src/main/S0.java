@@ -10,6 +10,7 @@ public class S0 extends State{
     public void Start() {
         System.out.println("Started Start State");
         outPutProcessor.PayMsg();
+        outPutProcessor.InitializeData();
         mdaefsm.setStates(1);
     }
 

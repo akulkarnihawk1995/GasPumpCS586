@@ -25,6 +25,7 @@ public class GP2 {
     public void PayDebit(String p){
         dataStore.setTemp_p(p);
         mdaefsm.PayDebit();
+        printDataStore();
     }
     public void Pin(String x){
         if(dataStore.getPin().equals(x)){
@@ -55,6 +56,7 @@ public class GP2 {
     public void StartPump(){
         if(dataStore.getFloatPrice()>0){
             mdaefsm.StartPump();
+            printDataStore();
         }
     }
     public void PumpGallon(){

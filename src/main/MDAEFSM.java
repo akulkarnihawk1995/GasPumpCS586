@@ -6,7 +6,7 @@ public class MDAEFSM {
 
     private State[] states;
     private State state;
-    private int k;
+    public int k;
     OutputProcessor op;
 
     public void Initialize(AbstractFactory af, DataStore d) {
