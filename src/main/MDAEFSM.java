@@ -3,7 +3,7 @@ package main;
 //Context class for the State Pattern.
 //Contains MDAEFSM architecture.
 //Manages information for MDAEFSM architecture.
-//states array contains states that has MDAEFMS's
+//states array contains states that has MDAEFMS's instances
 //state indicates current state.
 
 import main.AbstractFactory;

@@ -4,7 +4,7 @@
 *Abstract Factory is passed around irrespective of underlying Concrete Factory.
 * It's products are created like when GP2 calls  Create_DisplayMenu it should return DisplayMenu2 because it's a ConcreteFactory2*/
 package main;
-
+//AbstractFactory Pattern
 public abstract class AbstractFactory {
     DataStore dataStore;
     public abstract StorePrices Create_StorePrices();

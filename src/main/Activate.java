@@ -1,5 +1,6 @@
 package main;
-
+// State Pattern
+// Concrete State S0 for the MDA-EFSM's State Machine
 public class Activate extends State {
 
     public void Activate() {

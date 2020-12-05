@@ -1,5 +1,5 @@
 package main;
-// AbstractFactory Pattern
+//AbstractFactory Pattern
 //This class contains ConcreteFactory1 which will be a ConcreteFactory for our GasPump1(GP1).
 //This will return the actions that are GasPump1's
 //This also create DataStore1
