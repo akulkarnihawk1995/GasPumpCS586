@@ -4,12 +4,12 @@ package main;
 public class S1 extends State{
     @Override
     public void Activate() {
-        System.out.println("Invalid State. Currently on State S1. Select 2.PayCredit or 6.PayCash");
+        System.out.println("Invalid State. Currently on State S1.");
     }
 
     @Override
     public void Start() {
-        System.out.println("Invalid State. Currently on State S1. Select 2.PayCredit or 6.PayCash");
+        System.out.println("Invalid State. Currently on State S1.");
 
     }
 
@@ -40,50 +40,50 @@ public class S1 extends State{
 
     @Override
     public void Approved() {
-        System.out.println("Invalid State. Currently on State S1. Select 2.PayCredit or 6.PayCash");
+        System.out.println("Invalid State. Currently on State S1.");
     }
 
     @Override
     public void Reject() {
-        System.out.println("Invalid State. Currently on State S1. Select 2.PayCredit or 6.PayCash");
+        System.out.println("Invalid State. Currently on State S1.");
 
     }
 
     @Override
     public void SelectGas(int g) {
-        System.out.println("Invalid State. Currently on State S1. Select 2.PayCredit or 6.PayCash");
+        System.out.println("Invalid State. Currently on State S1.");
     }
 
     @Override
     public void StartPump() {
-        System.out.println("Invalid State. Currently on State S1. Select 2.PayCredit or 6.PayCash");
+        System.out.println("Invalid State. Currently on State S1. ");
 
     }
 
     @Override
     public void Cancel() {
-        System.out.println("Invalid State. Currently on State S1. Select 2.PayCredit or 6.PayCash");
+        System.out.println("Invalid State. Currently on State S1. ");
 
     }
 
     @Override
     public void Pump() {
-        System.out.println("Invalid State. Currently on State S1. Select 2.PayCredit or 6.PayCash");
+        System.out.println("Invalid State. ");
     }
 
     @Override
     public void StopPump() {
-        System.out.println("Invalid State. Currently on State S1. Select 2.PayCredit or 6.PayCash");
+        System.out.println("Invalid State. Currently on State S1. ");
 
     }
 
     @Override
     public void CorrectPin() {
-        System.out.println("Invalid State. Currently on State S1. Select 2.PayCredit or 6.PayCash");
+        System.out.println("Invalid State. Currently on State S1. ");
     }
 
     @Override
     public void InCorrectPin(int k) {
-        System.out.println("Invalid State. Currently on State S1. Select 2.PayCredit or 6.PayCash");
+        System.out.println("Invalid State. Currently on State S1. ");
     }
 }
