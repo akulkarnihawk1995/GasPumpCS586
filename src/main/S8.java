@@ -65,8 +65,8 @@ public class S8 extends State{
 
     @Override
     public void CorrectPin() {
-        outPutProcessor.DisplayMenu();
         outPutProcessor.EjectCard();
+        outPutProcessor.DisplayMenu();
         System.out.println("Transaction Approved");
         mdaefsm.setStates(3);
     }

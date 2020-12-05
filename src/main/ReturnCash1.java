@@ -5,6 +5,8 @@ package main;
 public class ReturnCash1 extends ReturnCash{
     @Override
     public void ReturnCash(DataStore ds) {
-
+        if(ds.getW()==0){
+            System.out.println("Inserted Cash was returned");
+        }
     }
 }

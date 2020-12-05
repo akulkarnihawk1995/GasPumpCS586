@@ -56,6 +56,7 @@ public class S3 extends State{
     public void Cancel() {
         System.out.println("Cancel called");
         outPutProcessor.CancelMsg();
+        outPutProcessor.ReturnCash();
         mdaefsm.setStates(0);
     }
 
