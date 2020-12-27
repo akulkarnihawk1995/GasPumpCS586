@@ -1,2 +1,2 @@
 # GasPumpCS586
-Final Project for CS-586
+Abtrsact Factory, Strategy, State Pattern
